@@ -31,7 +31,7 @@ public class Testcase3 extends Base{
 	@Test
 	public void tc3() throws IOException
 	{
-		System.out.println("tc3()-start ");
+		System.out.println("tc3()-start");
 
 		rep=ExtentR.getInstance();
 		test=rep.startTest("Testcase3");
