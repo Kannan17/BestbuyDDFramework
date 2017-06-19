@@ -21,7 +21,8 @@ public class ExtentR {
 			System.out.println(d.toString());
 			
 			// create a extent Report object
-extent=new ExtentReports("C:\\Workspace3\\BestbuyDDFramework\\Report31\\Report_"+filename+".html",true,DisplayOrder.NEWEST_FIRST);
+//extent=new ExtentReports("C:\\Workspace3\\BestbuyDDFramework\\Report31\\Report_"+filename+".html",true,DisplayOrder.NEWEST_FIRST);
+			extent=new ExtentReports(System.getProperty("user.dir")+"\\Report\\"+filename+".html",true,DisplayOrder.NEWEST_FIRST);
 		}
 		// Return the newly created/ old extent report object
 		return extent;
