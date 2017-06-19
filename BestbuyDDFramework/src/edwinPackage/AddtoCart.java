@@ -7,7 +7,7 @@ public class AddtoCart {
 	@Test
 	public void addtoCart()
 	{
-		System.out.println("****Add to cart***********");
+		System.out.println("****Add to cart*********** ");
 	}
 
 }
