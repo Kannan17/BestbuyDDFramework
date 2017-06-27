@@ -209,16 +209,16 @@ public class Base {
 		
 		if ( locator.endsWith("_xpath"))
 		{
-			driver.findElement(By.xpath(prop.getProperty(locator))).sendKeys(text);
+			driver.findElement(By.xpath(prop.getProperty(locator))).sendKeys(prop.getProperty(text));
 		}
 		else if (locator.endsWith("_name"))
 		{
-			driver.findElement(By.name(prop.getProperty(locator))).sendKeys(text);
+			driver.findElement(By.name(prop.getProperty(locator))).sendKeys(prop.getProperty(text));
 		}
 		
 		else if (locator.endsWith("_id"))
 		{
-			driver.findElement(By.id(prop.getProperty(locator))).sendKeys(text);
+			driver.findElement(By.id(prop.getProperty(locator))).sendKeys(prop.getProperty(text));
 		}
 		
 		else
