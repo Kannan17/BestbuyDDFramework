@@ -20,7 +20,7 @@ public class ExcelData {
 	{
 		
 		// Get the file to the reference variable fs
-		FileInputStream fs = new FileInputStream("C:\\Workspace3\\BestbuyDDFramework\\data.xlsx");
+		FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\data.xlsx");
 		//Create a workbook in POI with fs data
 	    Workbook wb =  WorkbookFactory.create(fs);
 	    // identify the sheet from which the data needs to be taken
