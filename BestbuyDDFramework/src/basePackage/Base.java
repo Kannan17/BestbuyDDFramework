@@ -2,6 +2,7 @@ package basePackage;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
@@ -16,6 +17,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import com.relevantcodes.extentreports.DisplayOrder;
@@ -64,11 +66,34 @@ public class Base {
 		
 	
 	
-	public void init()
+	public void init() throws IOException
 	{
+		
+		// Mention where is the file located and assign that to the reference fs
+		FileInputStream fs= new FileInputStream(System.getProperty("user.dir")+"\\config.properties");
+				
+		// Create a object for Property class
+		prop= new Properties ();
+				
+		// Load the file to Property object reference
+		prop.load(fs);
+		
+		String Btype=prop.getProperty("browser");
+		
+		if (Btype.equals("Chrome")){
 		
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\chromedriver.exe" );
 		driver= new ChromeDriver();
+		}
+		
+		else if (Btype.equals("Mozilla"))
+		{
+			
+			
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\geckodriver.exe");
+			driver= new FirefoxDriver();
+		}
+			
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
@@ -78,14 +103,7 @@ public class Base {
 	// To  initialize the property file and navigate to the URL
 	public void naviagate() throws IOException
 	{
-		// Mention where is the file located and assign that to the reference fs
-		FileInputStream fs= new FileInputStream(System.getProperty("user.dir")+"\\config.properties");
 		
-		// Create a object for Property class
-		prop= new Properties ();
-		
-		// Load the file to Property object reference
-		prop.load(fs);
 		
 		// Open the URL		
 		driver.get(prop.getProperty("url"));
@@ -95,6 +113,9 @@ public class Base {
 		
 		// Click on the Accept button 
 		driver.findElement(By.name(prop.getProperty("acceptButton"))).click();
+
+		// Open the URL		
+				driver.get(prop.getProperty("url"));
 		
 	}
 	
