@@ -11,6 +11,16 @@ public class AddtoCart {
 		System.out.println("****Add to cart*********** ");
 		System.out.println("****Add to cart*********** ");
 		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+
 	
 	
 	
