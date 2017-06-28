@@ -8,7 +8,9 @@ public class AddtoCart {
 	public void addtoCart()
 	{
 		System.out.println("****Add to cart*********** ");
-		System.out.println("****Add to cart*********** ");System.out.println("****Add to cart*********** ");System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
+		System.out.println("****Add to cart*********** ");
 	
 	
 	
