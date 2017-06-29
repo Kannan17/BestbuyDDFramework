@@ -26,8 +26,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class Base {
-	
-	
+		
 	// Declare here so that all the child class can use the common variable
 	public WebDriver driver;
 	public Properties prop;

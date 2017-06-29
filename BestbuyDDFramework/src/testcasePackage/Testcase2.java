@@ -99,13 +99,13 @@ public class Testcase2 extends Base {
 		public String[][] getData() throws Exception
 		{
 		
-		
+		String Testcase="Testcase2";
 		
 			// Declare a two dimension array
 			String data[][];
 			
 			// Call the getExcelData() method and assign the data into two dimension array data
-		data= ExcelData.getExcelData();
+		data= ExcelData.getExcelData(Testcase);
 			
 		// written the data to calling method
 		return data;
