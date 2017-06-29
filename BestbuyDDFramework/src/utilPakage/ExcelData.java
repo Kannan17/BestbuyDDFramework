@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 public class ExcelData {
 	
-	@Test
+	
 	public static String[][] getExcelData(String testCname) throws EncryptedDocumentException, InvalidFormatException, IOException
 	
 	{
