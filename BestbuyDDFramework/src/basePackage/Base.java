@@ -244,7 +244,7 @@ public class Base {
 		
 		else
 		{
-			System.out.println(" Locator is wrong "+ locator);
+			System.out.println(" Locator is wrong --  :    "+ locator);
 			Assert.fail();
 		}
 		
