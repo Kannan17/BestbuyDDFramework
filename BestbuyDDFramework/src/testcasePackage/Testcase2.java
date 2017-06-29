@@ -85,7 +85,7 @@ public class Testcase2 extends Base {
 		rep.flush();
 		
 		// close the browser
-		driver.quit();
+	//	driver.quit();
 		}
 		
 	
