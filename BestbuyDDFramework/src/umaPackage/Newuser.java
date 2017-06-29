@@ -149,7 +149,7 @@ public class Newuser extends Base{
 		
 		String data[][];
 		
-		data= ExcelData.getExcelData();
+		data= ExcelData.getExcelData("Newuser");
 		
 		return data;
 	}		

@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class ExcelData {
 	
 	@Test
-	public static String[][] getExcelData() throws EncryptedDocumentException, InvalidFormatException, IOException
+	public static String[][] getExcelData(String Testcasename) throws EncryptedDocumentException, InvalidFormatException, IOException
 	
 	{
 		
@@ -30,7 +30,7 @@ public class ExcelData {
 	    Row row;
 	    
 	    // mention the test case name ( this can be parameterized 
-	    String testCaseName="Testcase2";
+	    String testCaseName=Testcasename;
 	    
 	    // Create a variable for staring the excel data and initialize to null
 	    String cellData = null;
