@@ -92,7 +92,7 @@ public class Testcase1 extends Base {
 	public String[][] getData() throws EncryptedDocumentException, InvalidFormatException, IOException
 	{
 	
-		
+		System.out.println(System.getProperty("user.dir"));
 		String data[][];
 		
 		data= ExcelData.getExcelData();

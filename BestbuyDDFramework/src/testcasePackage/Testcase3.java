@@ -50,6 +50,8 @@ public class Testcase3 extends Base{
 		takeScreenshot1();
 		driver.findElement(By.name("button")).click();
 		
+		driver.get("http://www.bestbuy.com/");
+		
 				
 		
 		takeScreenshot1();
