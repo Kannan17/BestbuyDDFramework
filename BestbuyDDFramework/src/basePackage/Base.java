@@ -55,7 +55,7 @@ public class Base {
 		
 		path="C:\\Workspace3\\BestbuyDDFramework\\SC\\"+Scfilename+".png";
 		
-		// move the file to physical location in your commputer
+		// move the file to physical location in your computer
 		FileUtils.copyFile(fs, new File(path));
 		
 		// log the screenshot in the report
@@ -146,6 +146,12 @@ public class Base {
 		{
 			e=driver.findElement(By.id(prop.getProperty(locator)));
 		}
+		// Find the object by link Text
+				else if (locator.endsWith("_linkText"))
+				{
+					e=driver.findElement(By.linkText(prop.getProperty(locator)));
+				}
+		
 		
 		// If the locator is wrong control will come here
 		else
@@ -230,15 +236,18 @@ public class Base {
 		
 		if ( locator.endsWith("_xpath"))
 		{
+			driver.findElement(By.xpath(prop.getProperty(locator))).clear();
 			driver.findElement(By.xpath(prop.getProperty(locator))).sendKeys(text);
 		}
 		else if (locator.endsWith("_name"))
 		{
+			driver.findElement(By.name(prop.getProperty(locator))).clear();
 			driver.findElement(By.name(prop.getProperty(locator))).sendKeys(text);
 		}
 		
 		else if (locator.endsWith("_id"))
 		{
+			driver.findElement(By.id(prop.getProperty(locator))).clear();
 			driver.findElement(By.id(prop.getProperty(locator))).sendKeys(text);
 		}
 		
