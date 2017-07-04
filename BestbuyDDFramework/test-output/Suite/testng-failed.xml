@@ -22,7 +22,6 @@
       <class name="testcasePackage.Testcase3">
         <methods>
           <include name="end1"/>
-          <include name="tc3"/>
         </methods>
       </class> <!-- testcasePackage.Testcase3 -->
     </classes>
