@@ -1,0 +1,1 @@
+java -cp D:\Workspacebranch\BestbuyDDFramework\BestbuyDDFramework\lib\*;D:\Workspacebranch\BestbuyDDFramework\BestbuyDDFramework\bin org.testng.TestNG testng.xml
