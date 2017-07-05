@@ -22,7 +22,7 @@ public class Testcase4 extends Base {
 	public void tc1() throws IOException
 	{
 		
-		
+		//test***********
 		// Call the getInstance() method to get the Extent Report object
 		rep=ExtentR.getInstance();
 		// Start the test and assign that to Extent test reference variable "test"
