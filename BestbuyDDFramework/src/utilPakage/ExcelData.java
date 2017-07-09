@@ -19,7 +19,7 @@ public class ExcelData {
 	
 	{
 		
-		// Get the file to the reference variable fs
+		// Get the file to the reference variable
 		FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\data.xlsx");
 		//Create a workbook in POI with fs data
 	    Workbook wb =  WorkbookFactory.create(fs);
